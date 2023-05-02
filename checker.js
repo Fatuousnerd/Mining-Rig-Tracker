@@ -14,5 +14,5 @@ const username = urlParams.get('username');
 // If the username parameter is set, display a personalized welcome message
 if (username) {
   console.log('Welcome, ' + username + '!');
-  lg.innerHTML = "<div class='dropdown'><button>" + username + "</button><div class='dropdown-content'><a href='profile.html'>Profile</a><a href='https://www.facebook.com/'>Facebook</a><a href='https://www.twitter.com/'>Twitter</a><a href='logout.php'>Logout</a></div></div>"
+  lg.innerHTML = "<div class='dropdown'><button>" + username + "</button><div class='dropdown-content'><a href='profile.html'>Profile</a><a href='logout.php'>Logout</a></div></div>"
 }
