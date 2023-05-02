@@ -24,7 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
             $_SESSION["user_id"] = $user["id"];
 
-            header("location: index.html");
+			$_SESSION["username"] = $user["username"];
+			
+			$name = $user["username"];
+
+            header("location: index.html?username=" . urlencode($name));
             exit;
 
         }
